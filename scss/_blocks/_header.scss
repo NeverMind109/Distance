@@ -1,0 +1,105 @@
+.header {
+    background-color: #0050B3;
+    padding: 6px 0;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__search {
+        &-input {
+            width: 336px;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 22px;
+            color: #BFBFBF;
+            border: 1px solid #D9D9D9;
+            border-radius: 4px;
+            padding: 5px 35px 5px 12px;
+            background: #FFFFFF url('../img/search.svg') no-repeat;
+            background-position: right 12px center;
+            &::placeholder {
+                color: #BFBFBF;
+            }
+        }
+    }
+    &__navigation {
+        display: flex;
+    }
+    &__user {
+        display: flex;
+        align-items: center;
+        &-avatar {
+            margin-right: 8px;
+            }
+        &-name {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 22px;
+            color: #FFFFFF;
+        }
+    }
+    &__nav {
+        &-panel {
+            display: flex;
+            align-items: center;
+            &--margin {
+                margin: 0 12px;
+            }
+        }
+        &-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 22px;
+            color: #FFFFFF;
+            margin-left: 12px;
+            &::before {
+                content: '';
+                width: 1px;
+                height: 16px;
+                background-color: #003A8C;
+                margin-right: 12px;
+            }
+            &:last-child::after {
+                content: '';
+                width: 1px;
+                height: 16px;
+                background-color: #003A8C;
+                margin-left: 12px;
+            }
+        }
+    }
+    &__icons {
+        &-panel {
+            display: flex;
+            align-items: center;
+        }
+        &-link {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            &:not(:last-child) {
+                margin-right: 16px;
+            }
+            &:nth-child(4) {
+                margin-right: 8px;
+                &::before {
+                    content: '';
+                    width: 1px;
+                    height: 16px;
+                    background-color: #003A8C;
+                    margin-right: 13px;
+                }
+            }
+        }
+    }
+    &__icon {
+        fill: #002766;
+        &:hover {
+            fill: #fff;
+        }
+    }
+}

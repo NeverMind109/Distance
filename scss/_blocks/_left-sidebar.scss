@@ -1,0 +1,73 @@
+.left-sidebar {
+    max-width: 192px;
+    &--margin {
+        margin-top: 18px;
+    }
+    &__user {
+        padding-left: 10px;
+    }
+    &__avatar {
+        width: 24px;
+        height: 24px;
+    }
+    &__name {
+        font-weight: normal;
+        color: #262626;
+    }
+    &__nav-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &--main-margin {
+            margin: 12px 0 0;
+        }
+        &--shortcuts-margin {
+            margin: 24px 0 0;
+        }
+        &--explore-margin {
+            margin: 24px 0 0;
+        }
+    }
+    &-title {
+        margin: 0 0 4px;
+        padding-left: 10px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        color: #262626;
+    }
+    &__link {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: #595959;
+        &:active {
+            background: #FFFFFF;
+            color: #262626;
+            font-weight: 600;
+        }
+        &:not(:last-child) {
+            margin: 0 0 5px;
+        }
+        &--more {
+            margin-top: 13px;
+        }
+    }
+    &__icon {
+        margin-right: 9px;
+        &-more {
+            margin-right: 12px;
+        }
+    }
+    &__see-more {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: #1890FF;
+    }
+}

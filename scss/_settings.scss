@@ -12,3 +12,18 @@ body {
     width: 90%;
     margin: auto;
 }
+.user {
+    display: flex;
+    align-items: center;
+    &-avatar {
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+    }
+    &-name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+}

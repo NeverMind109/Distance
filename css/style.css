@@ -6,7 +6,8 @@ body {
   font-family: sans-serif;
   margin: 0;
   font-style: normal;
-  background-color: #F5F5F5; }
+  background-color: #F5F5F5;
+  padding-top: 46px; }
 
 .container {
   max-width: 1200px;
@@ -367,7 +368,12 @@ template {
 
 .header {
   background-color: #0050B3;
-  padding: 6px 0; }
+  padding: 6px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99; }
   .header__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -464,6 +470,26 @@ template {
     fill: #002766; }
     .header__icon:hover {
       fill: #fff; }
+  .header__mobile-left-sidebar {
+    display: none;
+    width: 24px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0; }
+    .header__mobile-left-sidebar--margin {
+      margin-left: 12px; }
+  .header__line {
+    width: 100%;
+    height: 1px;
+    background-color: #fff; }
 
 .main__wrapper {
   display: -webkit-box;
@@ -1012,5 +1038,48 @@ template {
     color: #595959;
     cursor: pointer;
     margin-left: 5px; }
+
+@media (max-width: 1250px) {
+  .main__wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+
+  .right-sidebar {
+    display: none; } }
+@media (max-width: 960px) {
+  .header .user {
+    display: none; }
+
+  .header__nav-panel {
+    display: none; } }
+@media (max-width: 840px) {
+  .left-sidebar {
+    position: fixed;
+    background-color: #f1f1f1;
+    top: 25px;
+    left: 0;
+    max-width: 250px;
+    width: 100%;
+    height: 100%;
+    padding-top: 12px;
+    padding-left: 5%;
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s; }
+    .left-sidebar--active {
+      -webkit-transform: translate(0%);
+              transform: translate(0%); }
+
+  .header__mobile-left-sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+@media (max-width: 760px) {
+  .header__search {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

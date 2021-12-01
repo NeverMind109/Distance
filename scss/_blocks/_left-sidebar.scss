@@ -1,8 +1,9 @@
 .main__wrapper {
     display: flex;
+    justify-content: space-between;
 }
 .left-sidebar {
-    max-width: 192px;
+    width: 192px;
     &--margin {
         margin-top: 18px;
         margin-right: 12px;
@@ -64,14 +65,5 @@
     }
     &__icon {
         margin-right: 9px;
-        &-more {
-            margin-right: 12px;
-        }
-    }
-    &__see-more {
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 22px;
-        color: #1890FF;
     }
 }

@@ -27,3 +27,31 @@ body {
         color: #FFFFFF;
     }
 }
+.sidebar {
+    &__link {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: #595959;
+        &--margin {
+            margin-top: 13px;
+        }
+    }
+    &__see-more {
+        margin-left: 12px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        &--left {
+            color: #1890FF;
+        }
+        &--right {
+            color: #0050B3;
+        }
+    }
+}

@@ -439,10 +439,16 @@ template {
     .header__icon:hover {
       fill: #fff; }
 
+.main__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .left-sidebar {
   max-width: 192px; }
   .left-sidebar--margin {
-    margin-top: 18px; }
+    margin-top: 18px;
+    margin-right: 12px; }
   .left-sidebar__user {
     padding-left: 10px; }
   .left-sidebar__avatar {
@@ -506,5 +512,197 @@ template {
     font-size: 14px;
     line-height: 22px;
     color: #1890FF; }
+
+.content {
+  max-width: 588px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+  .content--margin {
+    margin-top: 18px; }
+  .content__create-post {
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    overflow: hidden; }
+    .content__create-post-header {
+      background-color: #F5F5F5; }
+    .content__create-post-title {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+      color: #595959;
+      margin: 0;
+      padding: 9px 16px 9px; }
+    .content__create-post-body {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      padding: 16px 16px 0; }
+    .content__create-post-avatar {
+      width: 40px;
+      height: 40px;
+      margin-right: 16px; }
+    .content__create-post-input {
+      padding: 8px 0;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #8C8C8C;
+      outline: none; }
+    .content__create-post-line {
+      margin: 24px 16px 16px;
+      background-color: #E8E8E8; }
+    .content__create-post-footer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 0 16px 16px; }
+    .content__create-post-tag {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background: #F5F5F5;
+      border-radius: 48px;
+      border: none;
+      padding: 9px 12px;
+      cursor: pointer; }
+      .content__create-post-tag:not(:last-child) {
+        margin-right: 8px; }
+      .content__create-post-tag-icon {
+        margin-right: 8px; }
+      .content__create-post-tag-text {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: #595959; }
+  .content__post {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 16px; }
+    .content__post--margin {
+      margin: 16px 0 0; }
+    .content__post-header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+    .content__post-user {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .content__post-avatar {
+      width: 48px;
+      height: 48px;
+      margin-right: 12px; }
+    .content__post-information {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+    .content__post-name {
+      width: 100%;
+      text-decoration: none;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 22px;
+      color: #0050B3; }
+    .content__post-info-time {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .content__post-time {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 22px;
+      color: #8C8C8C; }
+      .content__post-time::after {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #BFBFBF;
+        margin: 0 6px 0 8px; }
+    .content__post-functions {
+      background-color: #fff;
+      border: none;
+      cursor: pointer; }
+    .content__post-body {
+      margin: 16px 0 0; }
+    .content__post-text {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 22px;
+      color: #595959;
+      margin: 0 0 16px; }
+      .content__post-text-link {
+        color: #096DD9;
+        text-decoration: none; }
+    .content__post-image {
+      border: 1px solid #BFBFBF;
+      border-radius: 4px;
+      max-width: 100%; }
+    .content__post-likes {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 9px 0; }
+      .content__post-likes-counter {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: #595959;
+        margin-left: 4px; }
+    .content__post-line {
+      margin: 0 0 16px;
+      background-color: #E8E8E8; }
+    .content__post-footer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+    .content__post-button {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background-color: #fff;
+      border: none;
+      cursor: pointer; }
+      .content__post-button-text {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        color: #595959;
+        margin-left: 8px; }
 
 /*# sourceMappingURL=style.css.map */

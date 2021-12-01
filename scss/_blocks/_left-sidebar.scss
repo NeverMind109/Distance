@@ -1,7 +1,11 @@
+.main__wrapper {
+    display: flex;
+}
 .left-sidebar {
     max-width: 192px;
     &--margin {
         margin-top: 18px;
+        margin-right: 12px;
     }
     &__user {
         padding-left: 10px;
